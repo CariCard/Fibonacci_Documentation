@@ -1,0 +1,52 @@
+
+public class Timed_Fibonacci {
+
+	
+			static void Fibonacci(int Num)
+			{
+				//iterate
+				int num1 = 0, num2 = 1;
+
+				int counter = 0;
+
+				
+				while (counter < Num) {
+					
+					System.out.print(num1 + " ");
+
+					int num3 = num2 + num1;
+					num1 = num2;
+					num2 = num3;
+					counter = counter + 1;
+				}
+			}
+			//recursive
+				static int fib(int n)
+				{
+					if (n <= 1)
+						return n;
+
+					return fib(n - 1)
+						+ fib(n - 2);
+				}
+
+			
+
+			
+			
+			public static void main(String args[])
+			{
+				//iterative 
+				int Num = 10;
+
+				Fibonacci(Num);
+				
+				//Recursive 
+				int N = 10;
+
+				for (int i = 0; i < N; i++) {
+
+					System.out.print(fib(i) + " ");
+			}
+		}
+	}
