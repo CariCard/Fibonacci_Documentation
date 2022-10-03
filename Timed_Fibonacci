@@ -4,8 +4,12 @@ public class Timed_Fibonacci {
 
 	long start_time,end_time;
 	
+	
 			static void Fibonacci(int Num)
 			{
+				
+				long start_time = System.nanoTime();
+				
 				//iterate
 				int num1 = 0, num2 = 1;
 
@@ -20,6 +24,8 @@ public class Timed_Fibonacci {
 					num1 = num2;
 					num2 = num3;
 					counter = counter + 1;
+					
+					
 				}
 			}
 			//recursive
@@ -33,7 +39,30 @@ public class Timed_Fibonacci {
 				}
 
 			
+			public static void main(String args[])
+			{
+				//iterative 
+				int Num = 10;
 
+				Fibonacci(Num);
+				
+				//Recursive 
+				int N = 10;
+
+				for (int i = 0; i < N; i++) {
+
+					System.out.print(fib(i) + " ");
+					
+					
+					end_time  = System.nanoTime(); 
+					
+					 
+			System.out.println("It took " + Num + " iterations: " + (end_time - start_time) + " nanoseconds");
+			}
+				
+				
+		}
+	}
 			
 			
 			public static void main(String args[])
