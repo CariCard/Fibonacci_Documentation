@@ -1,6 +1,8 @@
 
+
 public class Timed_Fibonacci {
 
+	long start_time,end_time;
 	
 			static void Fibonacci(int Num)
 			{
@@ -34,6 +36,30 @@ public class Timed_Fibonacci {
 
 			
 			
+			public static void main(String args[])
+			{
+				//iterative 
+				int Num = 10;
+
+				Fibonacci(Num);
+				
+				//Recursive 
+				int N = 10;
+
+				for (int i = 0; i < N; i++) {
+
+					System.out.print(fib(i) + " ");
+					
+					//timed sequence
+					long startTime = System.nanoTime(); 
+					
+					start_time  = System.nanoTime();  
+					 end_time  = System.nanoTime(); 
+			}
+				
+				
+		}
+	}
 			public static void main(String args[])
 			{
 				//iterative 
